@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 20 12:57:36 CEST 2026</td>
+<td>Started on:</td><td>Mon Apr 20 13:10:37 CEST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32133 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11925 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -86,54 +86,8 @@ All SSL Certificates will be accepted...<br/>
 Checking availability of URL: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions.json<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=147.0.7727.56)
-Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
-System info: host: &apos;EGORNIKER-NB&apos;, ip: &apos;192.168.178.26&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [af38d729d82b6037db9aa6a9a5d78a6b, get {url=https://10.225.92.180:8443/prweb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\E59B5~1.GOR\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57157}, goog:processID: 4400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57157/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af38d729d82b6037db9aa6a9a5d78a6b
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:351)
-	at com.pega.BrowserImpl.open(BrowserImpl.java:314)
-	at com.pega.BrowserImpl.open(BrowserImpl.java:284)
-	at com.pega.CRMBrowser.open(CRMBrowser.java:99)
-	at com.pega.config.test.TestBase.configureBrowser(TestBase.java:60)
-	at com.pega.CRMTestEnvironment.setUp(CRMTestEnvironment.java:76)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace169370778", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace169370778'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=147.0.7727.56)
-Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
-System info: host: &apos;EGORNIKER-NB&apos;, ip: &apos;192.168.178.26&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [af38d729d82b6037db9aa6a9a5d78a6b, get {url=https://10.225.92.180:8443/prweb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\E59B5~1.GOR\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57157}, goog:processID: 4400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57157/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af38d729d82b6037db9aa6a9a5d78a6b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:351)
-	at com.pega.BrowserImpl.open(BrowserImpl.java:314)
-	at com.pega.BrowserImpl.open(BrowserImpl.java:284)
-	at com.pega.CRMBrowser.open(CRMBrowser.java:99)
-	at com.pega.config.test.TestBase.configureBrowser(TestBase.java:60)
-	at com.pega.CRMTestEnvironment.setUp(CRMTestEnvironment.java:76)
-</pre></div></td>
-<td>30</td>
+<td></td>
+<td>10</td>
 <td>com.pega.PilotRunCukesTest@3b07a0d6</td></tr>
 </table><p>
 </body>
