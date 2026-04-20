@@ -14,30 +14,30 @@
       <![CDATA[Checking availability of URL: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions.json]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-04-20T13:10:37 MESZ" name="Surefire suite" finished-at="2026-04-20T13:10:48 MESZ" duration-ms="11925">
+  <suite started-at="2026-04-20T16:21:53 MESZ" name="Surefire suite" finished-at="2026-04-20T16:24:15 MESZ" duration-ms="141552">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-20T13:10:37 MESZ" name="Surefire test" finished-at="2026-04-20T13:10:48 MESZ" duration-ms="11925">
+    <test started-at="2026-04-20T16:21:53 MESZ" name="Surefire test" finished-at="2026-04-20T16:24:15 MESZ" duration-ms="141552">
       <class name="com.pega.PilotRunCukesTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-20T13:10:37 MESZ" name="setUpClass" finished-at="2026-04-20T13:10:38 MESZ" duration-ms="1085" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-20T16:21:53 MESZ" name="setUpClass" finished-at="2026-04-20T16:21:54 MESZ" duration-ms="1112" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4d81e83a]]>
+                <![CDATA[org.testng.TestRunner@5c0b55bc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-20T13:10:38 MESZ" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-20T13:10:48 MESZ" duration-ms="10710" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-20T16:21:54 MESZ" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-20T16:24:14 MESZ" duration-ms="140330" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Open the Pega application login page"]]>
+                <![CDATA["Log in to Pega application via SSO"]]>
               </value>
             </param>
             <param index="1">
@@ -61,7 +61,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-20T13:10:48 MESZ" name="tearDownClass" finished-at="2026-04-20T13:10:48 MESZ" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-20T16:24:14 MESZ" name="tearDownClass" finished-at="2026-04-20T16:24:15 MESZ" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

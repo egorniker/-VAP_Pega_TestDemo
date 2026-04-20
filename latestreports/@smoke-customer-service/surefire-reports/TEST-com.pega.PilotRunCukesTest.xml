@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.pega.PilotRunCukesTest" time="12.361" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.pega.PilotRunCukesTest" time="141.972" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="webdriver.chrome.driver" value="binaries/chromedriver.exe"/>
@@ -20,7 +20,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="DE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\e.gorniker\AppData\Local\Temp\surefire9551422072946290985\surefirebooter-20260420131036295_3.jar C:\Users\e.gorniker\AppData\Local\Temp\surefire9551422072946290985 2026-04-20T13-10-35_717-jvmRun1 surefire-20260420131036295_1tmp surefire_0-20260420131036295_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\e.gorniker\AppData\Local\Temp\surefire12175412360850674502\surefirebooter-20260420162152726_3.jar C:\Users\e.gorniker\AppData\Local\Temp\surefire12175412360850674502 2026-04-20T16-21-52_180-jvmRun1 surefire-20260420162152726_1tmp surefire_0-20260420162152726_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="PilotRunCukesTest"/>
     <property name="surefire.test.class.path" value="C:\Users\e.gorniker\Documents\!VAP_Pega_TestDemo\target\test-classes;C:\Users\e.gorniker\Documents\!VAP_Pega_TestDemo\target\classes;C:\Users\e.gorniker\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\e.gorniker\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\e.gorniker\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\e.gorniker\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\e.gorniker\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\e.gorniker\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\e.gorniker\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\e.gorniker\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\e.gorniker\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\e.gorniker\Documents\!VAP_Pega_TestDemo\lib\pega-base-ui-testframework-4.3.1.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-java\4.2.2\selenium-java-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-api\4.2.2\selenium-api-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.2.2\selenium-chrome-driver-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.2.2\selenium-chromium-driver-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v100\4.2.2\selenium-devtools-v100-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.2.2\selenium-devtools-v101-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.2.2\selenium-devtools-v102-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.2.2\selenium-devtools-v85-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.2.2\selenium-edge-driver-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.2.2\selenium-firefox-driver-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.2.2\selenium-ie-driver-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.2.2\selenium-opera-driver-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.2.2\selenium-safari-driver-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-support\4.2.2\selenium-support-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.2.2\selenium-remote-driver-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\e.gorniker\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\e.gorniker\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.77.Final\netty-transport-classes-epoll-4.1.77.Final.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.77.Final\netty-transport-classes-kqueue-4.1.77.Final.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.77.Final\netty-transport-native-unix-common-4.1.77.Final.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-api\1.14.0\opentelemetry-api-1.14.0.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-context\1.14.0\opentelemetry-context-1.14.0.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.14.0\opentelemetry-exporter-logging-1.14.0.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.14.0\opentelemetry-sdk-metrics-1.14.0.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.14.0-alpha\opentelemetry-sdk-logs-1.14.0-alpha.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.14.0\opentelemetry-sdk-common-1.14.0.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.14.0\opentelemetry-sdk-extension-autoconfigure-spi-1.14.0.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.14.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.14.0-alpha.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.14.0\opentelemetry-sdk-trace-1.14.0.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.14.0\opentelemetry-sdk-1.14.0.jar;C:\Users\e.gorniker\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.14.0-alpha\opentelemetry-semconv-1.14.0-alpha.jar;C:\Users\e.gorniker\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\e.gorniker\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\e.gorniker\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\e.gorniker\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\e.gorniker\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-http\4.2.2\selenium-http-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\e.gorniker\.m2\repository\org\seleniumhq\selenium\selenium-json\4.2.2\selenium-json-4.2.2.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-buffer\4.1.95.Final\netty-buffer-4.1.95.Final.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-codec-http\4.1.95.Final\netty-codec-http-4.1.95.Final.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-codec\4.1.95.Final\netty-codec-4.1.95.Final.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-common\4.1.95.Final\netty-common-4.1.95.Final.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-resolver\4.1.95.Final\netty-resolver-4.1.95.Final.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-transport\4.1.95.Final\netty-transport-4.1.95.Final.jar;C:\Users\e.gorniker\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.8\netty-reactive-streams-2.0.8.jar;C:\Users\e.gorniker\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-handler\4.1.95.Final\netty-handler-4.1.95.Final.jar;C:\Users\e.gorniker\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-codec-socks\4.1.94.Final\netty-codec-socks-4.1.94.Final.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-handler-proxy\4.1.94.Final\netty-handler-proxy-4.1.94.Final.jar;C:\Users\e.gorniker\.m2\repository\io\netty\netty-transport-native-epoll\4.1.94.Final\netty-transport-native-epoll-4.1.94.Final.jar;C:\Users\e.gorniker\.m2\repository\com\pojosontheweb\monte-repack\1.1\monte-repack-1.1.jar;C:\Users\e.gorniker\.m2\repository\javax\media\jmf\2.1.1e\jmf-2.1.1e.jar;C:\Users\e.gorniker\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\e.gorniker\.m2\repository\jakarta\mail\jakarta.mail-api\2.1.2\jakarta.mail-api-2.1.2.jar;C:\Users\e.gorniker\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\e.gorniker\.m2\repository\com\google\inject\guice\6.0.0\guice-6.0.0.jar;C:\Users\e.gorniker\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\e.gorniker\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\e.gorniker\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\e.gorniker\.m2\repository\net\lingala\zip4j\zip4j\2.11.5\zip4j-2.11.5.jar;C:\Users\e.gorniker\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\e.gorniker\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\e.gorniker\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\e.gorniker\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\e.gorniker\.m2\repository\org\apache\ant\ant\1.10.12\ant-1.10.12.jar;C:\Users\e.gorniker\.m2\repository\org\apache\ant\ant-launcher\1.10.12\ant-launcher-1.10.12.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-testng\7.2.3\cucumber-testng-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\e.gorniker\.m2\repository\org\webjars\jquery\3.6.4\jquery-3.6.4.jar;C:\Users\e.gorniker\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\e.gorniker\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\e.gorniker\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\e.gorniker\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\e.gorniker\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\e.gorniker\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\e.gorniker\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\e.gorniker\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\e.gorniker\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\e.gorniker\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\e.gorniker\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\e.gorniker\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\e.gorniker\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\e.gorniker\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\e.gorniker\.m2\repository\ch\qos\logback\logback-classic\1.3.8\logback-classic-1.3.8.jar;C:\Users\e.gorniker\.m2\repository\ch\qos\logback\logback-core\1.3.8\logback-core-1.3.8.jar;C:\Users\e.gorniker\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\e.gorniker\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-guice\7.2.3\cucumber-guice-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\tag-expressions\5.0.2\tag-expressions-5.0.2.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-core\7.2.3\cucumber-core-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-gherkin\7.2.3\cucumber-gherkin-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.2.3\cucumber-gherkin-messages-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\datatable\7.2.3\datatable-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-plugin\7.2.3\cucumber-plugin-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\docstring\7.2.3\docstring-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\ci-environment\8.1.0\ci-environment-8.1.0.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-java\7.2.3\cucumber-java-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-junit\7.2.3\cucumber-junit-7.2.3.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\Users\e.gorniker\.m2\repository\mx4j\mx4j\3.0.2\mx4j-3.0.2.jar;C:\Users\e.gorniker\.m2\repository\org\apache\maven\plugin-tools\maven-plugin-annotations\3.12.0\maven-plugin-annotations-3.12.0.jar;C:\Users\e.gorniker\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.0\plexus-utils-3.4.0.jar;C:\Users\e.gorniker\.m2\repository\io\rest-assured\rest-assured\5.3.1\rest-assured-5.3.1.jar;C:\Users\e.gorniker\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\e.gorniker\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\e.gorniker\.m2\repository\io\rest-assured\json-path\5.3.1\json-path-5.3.1.jar;C:\Users\e.gorniker\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\e.gorniker\.m2\repository\io\rest-assured\rest-assured-common\5.3.1\rest-assured-common-5.3.1.jar;C:\Users\e.gorniker\.m2\repository\io\rest-assured\xml-path\5.3.1\xml-path-5.3.1.jar;C:\Users\e.gorniker\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\e.gorniker\.m2\repository\org\apache\httpcomponents\httpmime\4.5.14\httpmime-4.5.14.jar;C:\Users\e.gorniker\.m2\repository\org\codehaus\groovy\groovy\3.0.11\groovy-3.0.11.jar;C:\Users\e.gorniker\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\e.gorniker\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\e.gorniker\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\e.gorniker\.m2\repository\org\eclipse\jetty\jetty-io\12.0.8\jetty-io-12.0.8.jar;C:\Users\e.gorniker\.m2\repository\org\eclipse\jetty\jetty-util\12.0.8\jetty-util-12.0.8.jar;C:\Users\e.gorniker\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\e.gorniker\.m2\repository\io\cucumber\gherkin\22.0.0\gherkin-22.0.0.jar;C:\Users\e.gorniker\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\e.gorniker\.m2\repository\com\browserstack\browserstack-local-java\1.1.0\browserstack-local-java-1.1.0.jar;C:\Users\e.gorniker\.m2\repository\org\json\json\20230227\json-20230227.jar;C:\Users\e.gorniker\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;"/>
@@ -37,7 +37,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\e.gorniker\AppData\Local\Temp\surefire9551422072946290985\surefirebooter-20260420131036295_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\e.gorniker\AppData\Local\Temp\surefire12175412360850674502\surefirebooter-20260420162152726_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7-44"/>
@@ -69,32 +69,52 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Open the Pega application login page&quot;, &quot;Optional[Open pilot Pega application]&quot;](1)" classname="com.pega.PilotRunCukesTest" time="10.713">
+  <testcase name="runScenario[&quot;Log in to Pega application via SSO&quot;, &quot;Optional[Open pilot Pega application]&quot;](1)" classname="com.pega.PilotRunCukesTest" time="140.328">
     <system-out><![CDATA[
 @pilot @smoke-customer-service
-Scenario: Open the Pega application login page             # com/pega/pilot/open_pilot_application.feature:5
-13:10:38.579 [main] INFO com.pega.config.SUTConfig -- Setting is.pipeline.run property to false
-13:10:38.581 [main] INFO com.pega.config.SUTConfig -- Debug mode is: false
-13:10:38.581 [main] INFO com.pega.config.SUTConfig -- Attach PRPC logs?false
-13:10:38.581 [main] INFO com.pega.TestEnvironmentImpl -- Logger level is set to : INFO
-13:10:38.820 [main] INFO com.pega.config.util.GetChromeDriver -- yes chrome.exe exists
-13:10:38.910 [main] INFO com.pega.config.util.GetChromeDriver -- current driver version is 147.0.7727.57
-13:10:38.911 [main] INFO com.pega.config.util.GetChromeDriver -- current version of chrome 147.0.7727.57
-13:10:38.913 [main] INFO com.pega.config.util.GetChromeDriver -- local Chrome version is 147
+Scenario: Log in to Pega application via SSO             # com/pega/pilot/open_pilot_application.feature:4
+16:21:55.062 [main] INFO com.pega.config.SUTConfig -- Setting is.pipeline.run property to false
+16:21:55.064 [main] INFO com.pega.config.SUTConfig -- Debug mode is: true
+16:21:55.064 [main] INFO com.pega.config.SUTConfig -- Attach PRPC logs?false
+16:21:55.064 [main] INFO com.pega.TestEnvironmentImpl -- Logger level is set to : INFO
+16:21:55.304 [main] INFO com.pega.config.util.GetChromeDriver -- yes chrome.exe exists
+16:21:55.395 [main] INFO com.pega.config.util.GetChromeDriver -- current driver version is 147.0.7727.57
+16:21:55.397 [main] INFO com.pega.config.util.GetChromeDriver -- current version of chrome 147.0.7727.57
+16:21:55.397 [main] INFO com.pega.config.util.GetChromeDriver -- local Chrome version is 147
 All SSL Certificates will be accepted...
 Checking availability of URL: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions.json
-13:10:39.335 [main] INFO com.pega.config.util.GetChromeDriver -- Chrome Version: 147	ChromeDriver version needed:147.0.7727.57
-13:10:39.336 [main] INFO com.pega.config.util.GetChromeDriver -- Required chromedriver version is already available. Not attempting to download any new version
-13:10:41.287 [main] INFO com.pega.drivers.PegaChromeDriver -- Chrome Driver launched successfully
-13:10:41.583 [main] INFO com.pega.TestEnvironmentImpl -- Driver is initialised::ChromeDriver: chrome on WINDOWS (597ce641a6b8980a2a8298827bfd4baf)
-13:10:41.584 [main] INFO com.pega.Browser -- Opening the URL
-13:10:42.783 [main] INFO com.pega.Browser -- Opening the URL
-  Given the user opens the Pega application                # com.pega.pilot.PilotSteps.theUserOpensThePegaApplication()
-  Then the Pega application login page should be displayed # com.pega.pilot.PilotSteps.thePegaApplicationLoginPageShouldBeDisplayed()
+16:21:55.830 [main] INFO com.pega.config.util.GetChromeDriver -- Chrome Version: 147	ChromeDriver version needed:147.0.7727.57
+16:21:55.830 [main] INFO com.pega.config.util.GetChromeDriver -- Required chromedriver version is already available. Not attempting to download any new version
+16:21:57.674 [main] INFO com.pega.drivers.PegaChromeDriver -- Chrome Driver launched successfully
+16:21:58.010 [main] INFO com.pega.TestEnvironmentImpl -- Driver is initialised::ChromeDriver: chrome on WINDOWS (837a1f20461b953f4c5b803e077f7925)
+16:21:58.010 [main] INFO com.pega.Browser -- Opening the URL
+16:21:59.218 [main] INFO com.pega.Browser -- Opening the URL
+16:22:00.170 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+16:22:00.759 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+16:22:00.833 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+16:22:32.373 [main] INFO com.pega.sync.WaitForDocStateReady -- !!! Document state div was never identified...are you sure your system is doc state aware?
+16:22:34.516 [main] INFO com.pega.sync.Throbber -- Throbbing never started
+16:22:34.540 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.name: identifier
+16:22:34.599 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.name: identifier
+16:22:34.689 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.xpath: //input[@type='submit']
+16:22:34.773 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.xpath: //input[@type='submit']
+16:23:04.870 [main] INFO com.pega.sync.WaitForDocStateReady -- !!! Document state div was never identified...are you sure your system is doc state aware?
+16:23:07.006 [main] INFO com.pega.sync.Throbber -- Throbbing never started
+16:23:07.028 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.name: credentials.passcode
+16:23:07.078 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.name: credentials.passcode
+16:23:07.162 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.xpath: //input[@type='submit']
+16:23:07.228 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.xpath: //input[@type='submit']
+16:23:37.372 [main] INFO com.pega.sync.WaitForDocStateReady -- !!! Document state div was never identified...are you sure your system is doc state aware?
+16:23:38.466 [main] INFO com.pega.sync.Throbber -- Throbbing never started
+16:23:38.504 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+16:23:38.560 [main] INFO com.pega.framework.PegaWebDriver -- element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+16:24:08.802 [main] INFO com.pega.sync.WaitForDocStateReady -- !!! Document state div was never identified...are you sure your system is doc state aware?
+16:24:09.891 [main] INFO com.pega.sync.Throbber -- Throbbing never started
+  Then the user should be logged in to Pega successfully # com.pega.pilot.PilotSteps.theUserShouldBeLoggedInToPegaSuccessfully()
 ]]></system-out>
-    <system-err><![CDATA[Apr. 20, 2026 1:10:37 PM io.cucumber.guice.InjectorSourceFactory loadInjectorSourceFromProperties
+    <system-err><![CDATA[Apr. 20, 2026 4:21:54 PM io.cucumber.guice.InjectorSourceFactory loadInjectorSourceFromProperties
 WARNUNG: The 'guice.injector-source' property has been deprecated.Add a class implementing 'io.cucumber.guice.InjectorSource' on the glue path instead
-Apr. 20, 2026 1:10:37 PM io.cucumber.core.resource.ClasspathScanner safelyLoadClass
+Apr. 20, 2026 4:21:54 PM io.cucumber.core.resource.ClasspathScanner safelyLoadClass
 WARNUNG: Failed to load class 'com.pega.config.util.PostBuildTasks$1'.
 By default Cucumber scans the entire classpath for step definitions.
 You can restrict this by configuring the glue path.
@@ -191,7 +211,7 @@ Caused by: java.lang.ClassNotFoundException: javax.mail.Authenticator
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	... 80 more
 
-Apr. 20, 2026 1:10:37 PM io.cucumber.core.resource.ClasspathScanner safelyLoadClass
+Apr. 20, 2026 4:21:54 PM io.cucumber.core.resource.ClasspathScanner safelyLoadClass
 WARNUNG: Failed to load class 'com.pega.util.MailUtil$1'.
 By default Cucumber scans the entire classpath for step definitions.
 You can restrict this by configuring the glue path.
@@ -288,7 +308,7 @@ Caused by: java.lang.ClassNotFoundException: javax.mail.Authenticator
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	... 80 more
 
-Apr. 20, 2026 1:10:37 PM io.cucumber.core.resource.ClasspathScanner safelyLoadClass
+Apr. 20, 2026 4:21:54 PM io.cucumber.core.resource.ClasspathScanner safelyLoadClass
 WARNUNG: Failed to load class 'com.pega.config.util.PostBuildTasks$1'.
 By default Cucumber scans the entire classpath for step definitions.
 You can restrict this by configuring the glue path.
@@ -385,7 +405,7 @@ Caused by: java.lang.ClassNotFoundException: javax.mail.Authenticator
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	... 80 more
 
-Apr. 20, 2026 1:10:37 PM io.cucumber.core.resource.ClasspathScanner safelyLoadClass
+Apr. 20, 2026 4:21:54 PM io.cucumber.core.resource.ClasspathScanner safelyLoadClass
 WARNUNG: Failed to load class 'com.pega.util.MailUtil$1'.
 By default Cucumber scans the entire classpath for step definitions.
 You can restrict this by configuring the glue path.
@@ -482,7 +502,7 @@ Caused by: java.lang.ClassNotFoundException: javax.mail.Authenticator
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	... 80 more
 
-Apr. 20, 2026 1:10:38 PM io.cucumber.java.MethodScanner safelyGetMethods
+Apr. 20, 2026 4:21:54 PM io.cucumber.java.MethodScanner safelyGetMethods
 WARNUNG: Failed to load methods of class 'com.pega.config.util.PostBuildTasks'.
 By default Cucumber scans the entire classpath for step definitions.
 You can restrict this by configuring the glue path.
@@ -562,7 +582,7 @@ Caused by: java.lang.ClassNotFoundException: javax.mail.MessagingException
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	... 63 more
 
-Apr. 20, 2026 1:10:38 PM io.cucumber.java.MethodScanner safelyGetMethods
+Apr. 20, 2026 4:21:54 PM io.cucumber.java.MethodScanner safelyGetMethods
 WARNUNG: Failed to load methods of class 'com.pega.util.MailUtil'.
 By default Cucumber scans the entire classpath for step definitions.
 You can restrict this by configuring the glue path.
@@ -642,7 +662,7 @@ Caused by: java.lang.ClassNotFoundException: javax.mail.MessagingException
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	... 63 more
 
-Apr. 20, 2026 1:10:38 PM io.cucumber.java.MethodScanner safelyGetMethods
+Apr. 20, 2026 4:21:54 PM io.cucumber.java.MethodScanner safelyGetMethods
 WARNUNG: Failed to load methods of class 'com.pega.util.CSVUtils'.
 By default Cucumber scans the entire classpath for step definitions.
 You can restrict this by configuring the glue path.
@@ -722,7 +742,7 @@ Caused by: java.lang.ClassNotFoundException: com.opencsv.exceptions.CsvValidatio
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	... 63 more
 
-Apr. 20, 2026 1:10:38 PM io.cucumber.java.MethodScanner safelyGetMethods
+Apr. 20, 2026 4:21:54 PM io.cucumber.java.MethodScanner safelyGetMethods
 WARNUNG: Failed to load methods of class 'com.pega.util.PDFUtil'.
 By default Cucumber scans the entire classpath for step definitions.
 You can restrict this by configuring the glue path.
@@ -802,7 +822,7 @@ Caused by: java.lang.ClassNotFoundException: de.redsix.pdfcompare.CompareResult
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	... 63 more
 
-Apr. 20, 2026 1:10:38 PM io.cucumber.java.MethodScanner safelyGetMethods
+Apr. 20, 2026 4:21:54 PM io.cucumber.java.MethodScanner safelyGetMethods
 WARNUNG: Failed to load methods of class 'com.pega.util.ZapUtils'.
 By default Cucumber scans the entire classpath for step definitions.
 You can restrict this by configuring the glue path.
@@ -882,17 +902,17 @@ Caused by: java.lang.ClassNotFoundException: org.zaproxy.clientapi.core.ClientAp
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	... 63 more
 
-Starting ChromeDriver 147.0.7727.57 (b4f28b5637d02137aa7f80eb8d589b0c005c3426-refs/branch-heads/7727_49@{#7}) on port 60394
+Starting ChromeDriver 147.0.7727.57 (b4f28b5637d02137aa7f80eb8d589b0c005c3426-refs/branch-heads/7727_49@{#7}) on port 49302
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 60394.
-Apr. 20, 2026 1:10:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+ChromeDriver was started successfully on port 49302.
+Apr. 20, 2026 4:21:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMATION: Detected upstream dialect: W3C
-Apr. 20, 2026 1:10:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr. 20, 2026 4:21:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNUNG: Unable to find an exact match for CDP version 147, so returning the closest version found: a no-op implementation
-Apr. 20, 2026 1:10:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr. 20, 2026 4:21:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFORMATION: Unable to find CDP implementation matching 147.
-Apr. 20, 2026 1:10:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+Apr. 20, 2026 4:21:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNUNG: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.2.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

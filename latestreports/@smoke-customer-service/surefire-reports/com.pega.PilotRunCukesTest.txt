@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.pega.PilotRunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.361 s - in com.pega.PilotRunCukesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 141.972 s - in com.pega.PilotRunCukesTest

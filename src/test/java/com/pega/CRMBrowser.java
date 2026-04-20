@@ -1,6 +1,9 @@
 package com.pega;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 import com.google.inject.Inject;
 import com.pega.crm.customerservice.CSPortal;
@@ -222,5 +225,53 @@ public class CRMBrowser extends PegaBrowser {
 	public void csr_logout_of_the_portal() {
 		logout();
 	}
+
+	@When("^User logs in to Pega platform via SSO$")
+	public void user_logs_in_to_pega_platform_via_sso() throws Throwable {
+		pegaDriver = testEnv.getPegaDriver();
+		WebDriverWait wait = new WebDriverWait(pegaDriver, Duration.ofSeconds(10));
+
+		By acceptButton = By.cssSelector("button[data-testid=':privacy-dialog:accept']");
+		By ssoButton = By.xpath("//button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]");
+		By loginField = By.name("identifier");
+		By passwordField = By.name("credentials.passcode");
+		By submitButton = By.xpath("//input[@type='submit']");
+
+		
+		if (!pegaDriver.findElements(acceptButton).isEmpty()) {
+			wait.until(ExpectedConditions.elementToBeClickable(acceptButton));
+			pegaDriver.findElement(acceptButton).click();
+		}
+
+		
+		wait.until(ExpectedConditions.elementToBeClickable(ssoButton));
+		pegaDriver.findElement(ssoButton).click();
+
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loginField));
+		pegaDriver.findElement(loginField)
+				.sendKeys(configuration.getCredential("PEGA_SSO_USER_ID"));
+
+		
+		wait.until(ExpectedConditions.elementToBeClickable(submitButton));
+		pegaDriver.findElement(submitButton).click();
+
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(passwordField));
+		pegaDriver.findElement(passwordField)
+				.sendKeys(configuration.getCredential("PEGA_SSO_PASSWORD"));
+
+		
+		wait.until(ExpectedConditions.elementToBeClickable(submitButton));
+		pegaDriver.findElement(submitButton).click();
+
+		
+		if (!pegaDriver.findElements(acceptButton).isEmpty()) {
+			wait.until(ExpectedConditions.elementToBeClickable(acceptButton));
+			pegaDriver.findElement(acceptButton).click();
+		}
+	}
+
+		
 
 }
