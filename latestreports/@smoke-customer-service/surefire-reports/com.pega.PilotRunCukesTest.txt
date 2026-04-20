@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: com.pega.PilotRunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 32.587 s <<< FAILURE! - in com.pega.PilotRunCukesTest
+com.pega.PilotRunCukesTest.runScenario["Open the Pega application login page", "Optional[Open pilot Pega application]"](1)  Time elapsed: 30.919 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'EGORNIKER-NB', ip: '192.168.178.26', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af38d729d82b6037db9aa6a9a5d78a6b, get {url=https://10.225.92.180:8443/prweb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\E59B5~1.GOR\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57157}, goog:processID: 4400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57157/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af38d729d82b6037db9aa6a9a5d78a6b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:351)
+	at com.pega.BrowserImpl.open(BrowserImpl.java:314)
+	at com.pega.BrowserImpl.open(BrowserImpl.java:284)
+	at com.pega.CRMBrowser.open(CRMBrowser.java:99)
+	at com.pega.config.test.TestBase.configureBrowser(TestBase.java:60)
+	at com.pega.CRMTestEnvironment.setUp(CRMTestEnvironment.java:76)
+
