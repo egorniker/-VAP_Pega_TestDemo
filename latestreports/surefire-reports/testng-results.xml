@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-21T14:48:52 MESZ" name="Surefire suite" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="1382">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-04-21T14:48:52 MESZ" name="Surefire test" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="1382">
+      <class name="com.pega.PilotDxSapRunCukesTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-21T14:48:52 MESZ" name="setUpClass" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@787f32b7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-21T14:48:53 MESZ" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Pilotvergleich der Vertragssektion"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-21T14:48:53 MESZ" name="tearDownClass" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.pega.PilotDxSapRunCukesTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

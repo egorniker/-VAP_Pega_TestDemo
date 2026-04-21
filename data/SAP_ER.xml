@@ -1,0 +1,165 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <ns4:leseVertragsAuskunftResponseType xmlns="http://wwag.de/base/messaging/v4" xmlns:ns2="http://wwag.de/vertrag/kranken/auskunft/to/v2" xmlns:ns3="http://wwag.de/vertrag/kranken/auskunft/dt/v2" xmlns:ns4="http://wwag.de/vertrag/kranken/auskunft/v2" xmlns:ns5="http://wwag.de/partner/auskunft/to/v4" xmlns:ns6="http://wwag.de/partner/auskunft/dt/v4" xmlns:ns7="http://wwag.de/vertrag/kranken/auskunft/fo/v2" xmlns:ns8="http://wwag.de/partner/auskunft/fo/v4">
+         <ns4:leseVertragsAuskunftResponseTO>
+            <responseMetadata>
+               <traceId>VAPTest</traceId>
+               <status>HINWEIS</status>
+               <meldungsliste>
+                  <meldung>
+                     <meldungType>BUSINESS</meldungType>
+                     <meldungsCode>de.wwag.ops.vertragsservicekranken.auskunft BUSINESS_FAULT_PARTNERSERVICE - Fachlicher Fehler bei Aufruf des PartnerServices:</meldungsCode>
+                     <meldungsText>Es wurden keine Personen gefunden</meldungsText>
+                  </meldung>
+               </meldungsliste>
+            </responseMetadata>
+            <ns2:vertrag>
+               <ns7:vertragsnummer>33-2116038-66</ns7:vertragsnummer>
+               <ns7:externerOrdnungsbegriff>
+                  <ns7:typ>ANTRAGSNUMMER_VM</ns7:typ>
+                  <ns7:wert></ns7:wert>
+               </ns7:externerOrdnungsbegriff>
+               <ns7:produktschluessel>3300</ns7:produktschluessel>
+               <ns7:produktbezeichnung>Krankenversicherung</ns7:produktbezeichnung>
+               <ns7:vertragsschluessel>33020</ns7:vertragsschluessel>
+               <ns7:vertragsbezeichnung>Zusatzversicherung</ns7:vertragsbezeichnung>
+               <ns7:vertragsstatus>Lebend</ns7:vertragsstatus>
+               <ns7:vertragsbeginn>2004-07-01</ns7:vertragsbeginn>
+               <ns7:bruttobeitrag>81.81</ns7:bruttobeitrag>
+               <ns7:bruttobeitragPolice>694.55</ns7:bruttobeitragPolice>
+               <ns7:zahlweise>Mon</ns7:zahlweise>
+               <ns7:unternehmen>Württembergische Krankenversicherung AG</ns7:unternehmen>
+               <ns7:herkunftVertrag>WK</ns7:herkunftVertrag>
+               <ns7:agenturBeziehung>
+                  <ns7:agenturnummerMitPz>9999-0021-1</ns7:agenturnummerMitPz>
+                  <ns7:beziehungsart>Betreuend</ns7:beziehungsart>
+               </ns7:agenturBeziehung>
+               <ns7:personenBeziehung>
+                  <ns7:ordnungsbegriff>
+                     <ns3:typ>KDNR</ns3:typ>
+                     <ns3:wert>640-358-017</ns3:wert>
+                  </ns7:ordnungsbegriff>
+                  <ns7:personRolle>VERTNEHMER</ns7:personRolle>
+                  <ns7:anrede>HERR</ns7:anrede>
+                  <ns7:vorname>Leo</ns7:vorname>
+                  <ns7:nachname>Musterkind</ns7:nachname>
+                  <ns7:geburtsdatum>1966-09-10</ns7:geburtsdatum>
+                  <ns7:plz>70197</ns7:plz>
+                  <ns7:ort>Stuttgart</ns7:ort>
+                  <ns7:strasse>Rotebühlstr. 142</ns7:strasse>
+                  <ns7:hausnummer>Rotebühlstr. 142</ns7:hausnummer>
+                  <ns7:personRolle>VERTNEHMER</ns7:personRolle>
+                  <ns7:hausnummer xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               </ns7:personenBeziehung>
+               <ns7:versichertePerson>
+                  <ns7:ordnungsbegriff>
+                     <ns3:typ>KDNR</ns3:typ>
+                     <ns3:wert>505-290-801</ns3:wert>
+                  </ns7:ordnungsbegriff>
+                  <ns7:vpNummer>1</ns7:vpNummer>
+                  <ns7:personRolle>VERSPERSON</ns7:personRolle>
+                  <ns7:geschlecht>MAENNLICH</ns7:geschlecht>
+                  <ns7:geburtsdatum>1968-09-28</ns7:geburtsdatum>
+                  <ns7:berufsBezeichnung>Speditionskaufleute</ns7:berufsBezeichnung>
+                  <ns7:tarif>
+                     <ns7:tarifSchluessel>KTAU43</ns7:tarifSchluessel>
+                     <ns7:tarifKurzText>KTAU43</ns7:tarifKurzText>
+                     <ns7:tarifLangText>Krankentagegeld ab dem 43. Tag</ns7:tarifLangText>
+                     <ns7:tarifArt/>
+                     <ns7:tarifBeginn>2016-08-01</ns7:tarifBeginn>
+                     <ns7:tarifBeitrag>108.29</ns7:tarifBeitrag>
+                     <ns7:tagegeld>10.00</ns7:tagegeld>
+                     <ns7:tagegeldAbTag>43</ns7:tagegeldAbTag>
+                     <ns7:tarifGruppe>KT2</ns7:tarifGruppe>
+                     <ns7:tarifBeitragMonatlich>9.40</ns7:tarifBeitragMonatlich>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>1</ns7:lfdNr>
+                        <ns7:beschreibung>Krankentagegeld ab dem 43. Tag</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>2</ns7:lfdNr>
+                        <ns7:beschreibung>Leistung nach vorheriger Zusage während stationärer Reha-Maßnahme</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>3</ns7:lfdNr>
+                        <ns7:beschreibung>Nachversicherungsoption nach Gehaltssteigerung</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifStatus>LEBEND</ns7:tarifStatus>
+                  </ns7:tarif>
+                  <ns7:tarif>
+                     <ns7:tarifSchluessel>ZG70</ns7:tarifSchluessel>
+                     <ns7:tarifKurzText>ZG70</ns7:tarifKurzText>
+                     <ns7:tarifLangText>Zahnersatz-Zusatzvers. mit 70% Erstattung</ns7:tarifLangText>
+                     <ns7:tarifArt/>
+                     <ns7:tarifBeginn>2004-07-01</ns7:tarifBeginn>
+                     <ns7:tarifBeitrag>274.18</ns7:tarifBeitrag>
+                     <ns7:tarifGruppe>Z01</ns7:tarifGruppe>
+                     <ns7:tarifBeitragMonatlich>23.80</ns7:tarifBeitragMonatlich>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>1</ns7:lfdNr>
+                        <ns7:beschreibung>70% Zahnersatz und Einlagefüllungen (Inlays) zzgl. GKV, maximal 80% inkl. GKV</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>2</ns7:lfdNr>
+                        <ns7:beschreibung>Keramikverblendungen</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifStatus>LEBEND</ns7:tarifStatus>
+                  </ns7:tarif>
+                  <ns7:tarif>
+                     <ns7:tarifSchluessel>BZG20</ns7:tarifSchluessel>
+                     <ns7:tarifKurzText>BZG20</ns7:tarifKurzText>
+                     <ns7:tarifLangText>Zahnersatzerstattung 20%, jährl. 80 EUR Zahn-prophylaxe, alle 2 Jahre 125 EUR f. Sehhilfen</ns7:tarifLangText>
+                     <ns7:tarifArt/>
+                     <ns7:tarifBeginn>2008-10-01</ns7:tarifBeginn>
+                     <ns7:tarifBeitrag>124.88</ns7:tarifBeitrag>
+                     <ns7:tarifGruppe>Z02</ns7:tarifGruppe>
+                     <ns7:tarifBeitragMonatlich>10.84</ns7:tarifBeitragMonatlich>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>1</ns7:lfdNr>
+                        <ns7:beschreibung>80 EUR professionelle Zahnreinigung pro Versicherungsjahr</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>2</ns7:lfdNr>
+                        <ns7:beschreibung>20% Zahnersatz (z.B. Kronen, Brücken, Implantate, Inlays) zzgl. GKV</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>3</ns7:lfdNr>
+                        <ns7:beschreibung>Keramikverblendungen bei medizinischer Notwendigkeit (bis 5. Zahn)</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>4</ns7:lfdNr>
+                        <ns7:beschreibung>125 EUR medizinisch notwendige Sehhilfen alle 2 Versicherungsjahre</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifStatus>LEBEND</ns7:tarifStatus>
+                  </ns7:tarif>
+                  <ns7:tarif>
+                     <ns7:tarifSchluessel>ZBU</ns7:tarifSchluessel>
+                     <ns7:tarifKurzText>ZBU</ns7:tarifKurzText>
+                     <ns7:tarifLangText>Zahnbehandlung</ns7:tarifLangText>
+                     <ns7:tarifArt/>
+                     <ns7:tarifBeginn>2016-08-01</ns7:tarifBeginn>
+                     <ns7:tarifBeitrag>187.20</ns7:tarifBeitrag>
+                     <ns7:tarifGruppe>Z03</ns7:tarifGruppe>
+                     <ns7:tarifBeitragMonatlich>16.25</ns7:tarifBeitragMonatlich>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>1</ns7:lfdNr>
+                        <ns7:beschreibung>100% professionelle Zahnreinigung</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>2</ns7:lfdNr>
+                        <ns7:beschreibung>100% Zahnbehandlung</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifhighlight>
+                        <ns7:lfdNr>3</ns7:lfdNr>
+                        <ns7:beschreibung>200 EUR schmerzlindernde Maßnahmen pro Kalenderjahr</ns7:beschreibung>
+                     </ns7:tarifhighlight>
+                     <ns7:tarifStatus>LEBEND</ns7:tarifStatus>
+                  </ns7:tarif>
+                  <ns7:status>LEBEND</ns7:status>
+               </ns7:versichertePerson>
+               <ns7:mitarbeiterVertrag>false</ns7:mitarbeiterVertrag>
+            </ns2:vertrag>
+         </ns4:leseVertragsAuskunftResponseTO>
+      </ns4:leseVertragsAuskunftResponseType>
+   </soap:Body>
+</soap:Envelope>

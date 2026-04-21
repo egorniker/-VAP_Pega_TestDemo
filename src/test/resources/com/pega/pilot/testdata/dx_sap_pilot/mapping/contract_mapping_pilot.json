@@ -1,0 +1,58 @@
+[
+  {
+    "fieldLabel": "Vertragsnummer",
+    "expectedSource": "SAP.manual.contractNumber",
+    "actualSource": "DX.data.caseInfo.content.ShortName",
+    "rule": "contractNumberFromShortName",
+    "temporaryMapping": false
+  },
+  {
+    "fieldLabel": "Status",
+    "expectedSource": "SAP_XML.vertragsstatus",
+    "actualSource": "DX.data.caseInfo.content.VertragsstatusUI",
+    "rule": "exact",
+    "temporaryMapping": false
+  },
+  {
+    "fieldLabel": "Vertragsnehmer",
+    "expectedSource": "SAP_XML.personenBeziehung[VERTNEHMER].vorname+nachname",
+    "actualSource": "DX.data.caseInfo.content.Vertragsnehmer.pyLabel",
+    "rule": "concatFullName",
+    "temporaryMapping": false
+  },
+  {
+    "fieldLabel": "Vermittlernummer",
+    "expectedSource": "SAP_XML.agenturBeziehung.agenturnummerMitPz",
+    "actualSource": "DX.data.caseInfo.content.TerritoryID",
+    "rule": "territoryToAgenturDisplay",
+    "temporaryMapping": true
+  },
+  {
+    "fieldLabel": "Unternehmen",
+    "expectedSource": "SAP_XML.unternehmen",
+    "actualSource": "DX.data.caseInfo.content.Unternehmen",
+    "rule": "companyDisplayName",
+    "temporaryMapping": false
+  },
+  {
+    "fieldLabel": "Bezeichnung",
+    "expectedSource": "SAP_XML.produktbezeichnung+vertragsbezeichnung",
+    "actualSource": "DX.data.caseInfo.content.Vertragsbezeichnung",
+    "rule": "composeBezeichnung",
+    "temporaryMapping": false
+  },
+  {
+    "fieldLabel": "Beitrag",
+    "expectedSource": "SAP_XML.bruttobeitrag",
+    "actualSource": "DX.data.caseInfo.content.Bruttobeitrag",
+    "rule": "pegaCurrencyDe",
+    "temporaryMapping": false
+  },
+  {
+    "fieldLabel": "Zahlweise",
+    "expectedSource": "SAP_XML.zahlweise",
+    "actualSource": "DX.data.caseInfo.content.Zahlweise",
+    "rule": "zahlweiseTranslation",
+    "temporaryMapping": false
+  }
+]

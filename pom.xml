@@ -12,7 +12,7 @@
     <url>https://meshbinhyd.pega.com/artifactory/miautomation-utils-local</url>
 
     <properties>
-        <tags>@smoke-customer-service</tags>
+        <tags></tags>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <baseClass>com.pega.CRMTestEnvironment</baseClass>
         <maven.compiler.target>1.8</maven.compiler.target>
