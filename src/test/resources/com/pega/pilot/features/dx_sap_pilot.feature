@@ -6,4 +6,4 @@ Feature: Vergleich von SAP XML und DX JSON fuer Vertragsdaten
     And Mapping Datei "src/test/resources/com/pega/pilot/testdata/dx_sap_pilot/mapping/contract_mapping_pilot.json"
     When ich die Vertragsfelder vergleiche
     Then sollen alle Felder fachlich korrekt sein
-    And ein deutscher Testbericht soll erzeugt werden
+    And ein Testbericht soll erzeugt werden

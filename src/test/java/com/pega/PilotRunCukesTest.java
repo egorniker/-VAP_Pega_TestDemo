@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-    features = "classpath:com/pega/pilot",
+    features = "classpath:com/pega/pilot/open_pilot_application.feature",
     glue = { "com.pega" },
     dryRun = false,
     plugin = {

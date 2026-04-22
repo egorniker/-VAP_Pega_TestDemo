@@ -1,47 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[existing driver pathbinaries\chromedriver.exe]]>
+    </line>
+    <line>
+      <![CDATA[in method: getCurrentVersionOfDriverAsString]]>
+    </line>
+    <line>
+      <![CDATA[All SSL Certificates will be accepted...]]>
+    </line>
+    <line>
+      <![CDATA[Checking availability of URL: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions.json]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-04-21T14:48:52 MESZ" name="Surefire suite" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="1382">
+  <suite started-at="2026-04-22T08:37:49 MESZ" name="Surefire suite" finished-at="2026-04-22T08:40:11 MESZ" duration-ms="142055">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-21T14:48:52 MESZ" name="Surefire test" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="1382">
-      <class name="com.pega.PilotDxSapRunCukesTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-21T14:48:52 MESZ" name="setUpClass" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="615" status="PASS">
+    <test started-at="2026-04-22T08:37:49 MESZ" name="Surefire test" finished-at="2026-04-22T08:40:11 MESZ" duration-ms="142055">
+      <class name="com.pega.PilotRunCukesTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-22T08:37:49 MESZ" name="setUpClass" finished-at="2026-04-22T08:37:50 MESZ" duration-ms="1176" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@787f32b7]]>
+                <![CDATA[org.testng.TestRunner@15eb82fc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-21T14:48:53 MESZ" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="636" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-22T08:37:50 MESZ" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T08:40:11 MESZ" duration-ms="140771" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Pilotvergleich der Vertragssektion"]]>
+                <![CDATA["Log in to Pega application via SSO"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten]"]]>
+                <![CDATA["Optional[Open pilot Pega application]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[existing driver pathbinaries\chromedriver.exe]]>
+            </line>
+            <line>
+              <![CDATA[in method: getCurrentVersionOfDriverAsString]]>
+            </line>
+            <line>
+              <![CDATA[All SSL Certificates will be accepted...]]>
+            </line>
+            <line>
+              <![CDATA[Checking availability of URL: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions.json]]>
+            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-21T14:48:53 MESZ" name="tearDownClass" finished-at="2026-04-21T14:48:53 MESZ" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-22T08:40:11 MESZ" name="tearDownClass" finished-at="2026-04-22T08:40:11 MESZ" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.pega.PilotDxSapRunCukesTest -->
+      </class> <!-- com.pega.PilotRunCukesTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

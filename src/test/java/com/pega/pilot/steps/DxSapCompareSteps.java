@@ -64,8 +64,8 @@ public class DxSapCompareSteps {
         }
     }
 
-    @And("ein deutscher Testbericht soll erzeugt werden")
+    @And("ein Testbericht soll erzeugt werden")
     public void einDeutscherTestberichtSollErzeugtWerden() {
-        System.out.println("Deutscher Testbericht wurde ausgegeben.");
+        System.out.println("Testbericht wurde ausgegeben.");
     }
 }
