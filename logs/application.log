@@ -299,3 +299,216 @@
 2026-04-22 08:39:34,897 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
 2026-04-22 08:40:05,139 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
 2026-04-22 08:40:06,226 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 09:11:09,511 INFO  c.p.c.SUTConfig [<init>:87] [main] - Setting is.pipeline.run property to false
+2026-04-22 09:11:09,547 INFO  c.p.c.SUTConfig [<init>:108] [main] - Debug mode is: true
+2026-04-22 09:11:09,548 INFO  c.p.c.SUTConfig [<init>:118] [main] - Attach PRPC logs?false
+2026-04-22 09:11:09,548 INFO  c.p.TestEnvironmentImpl [setLoggerLevel:198] [main] - Logger level is set to : INFO
+2026-04-22 09:11:09,871 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:70] [main] - yes chrome.exe exists
+2026-04-22 09:11:10,021 INFO  c.p.c.u.GetChromeDriver [getCurrentVersionOfDriverAsString:161] [main] - current driver version is 147.0.7727.57
+2026-04-22 09:11:10,023 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:76] [main] - current version of chrome 147.0.7727.57
+2026-04-22 09:11:10,023 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:77] [main] - local Chrome version is 147
+2026-04-22 09:11:10,527 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:115] [main] - Chrome Version: 147	ChromeDriver version needed:147.0.7727.57
+2026-04-22 09:11:10,528 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:117] [main] - Required chromedriver version is already available. Not attempting to download any new version
+2026-04-22 09:11:13,131 INFO  c.p.d.PegaChromeDriver [initializeDriver:165] [main] - Chrome Driver launched successfully
+2026-04-22 09:11:13,746 INFO  c.p.TestEnvironmentImpl [initializeEnvironment:130] [main] - Driver is initialised::ChromeDriver: chrome on WINDOWS (27867ae06f5a836d09eaf4a6faec8f84)
+2026-04-22 09:11:13,747 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 09:11:15,051 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 09:11:16,236 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 09:11:16,443 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 09:11:48,457 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 09:11:50,624 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 09:11:50,657 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 09:11:50,724 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 09:11:50,848 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 09:11:50,921 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 09:12:21,066 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 09:12:23,217 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 09:12:23,241 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 09:12:23,298 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 09:12:23,380 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 09:12:23,443 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 09:12:53,641 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 09:12:54,727 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 09:12:54,764 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 09:12:54,837 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 09:13:25,164 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 09:13:26,257 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 14:20:47,986 INFO  c.p.c.SUTConfig [<init>:87] [main] - Setting is.pipeline.run property to false
+2026-04-22 14:20:48,056 INFO  c.p.c.SUTConfig [<init>:108] [main] - Debug mode is: true
+2026-04-22 14:20:48,059 INFO  c.p.c.SUTConfig [<init>:118] [main] - Attach PRPC logs?false
+2026-04-22 14:20:48,060 INFO  c.p.TestEnvironmentImpl [setLoggerLevel:198] [main] - Logger level is set to : INFO
+2026-04-22 14:20:48,711 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:70] [main] - yes chrome.exe exists
+2026-04-22 14:20:48,948 INFO  c.p.c.u.GetChromeDriver [getCurrentVersionOfDriverAsString:161] [main] - current driver version is 147.0.7727.57
+2026-04-22 14:20:48,952 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:76] [main] - current version of chrome 147.0.7727.57
+2026-04-22 14:20:48,953 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:77] [main] - local Chrome version is 147
+2026-04-22 14:20:49,589 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:115] [main] - Chrome Version: 147	ChromeDriver version needed:147.0.7727.57
+2026-04-22 14:20:49,590 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:117] [main] - Required chromedriver version is already available. Not attempting to download any new version
+2026-04-22 14:20:52,544 INFO  c.p.d.PegaChromeDriver [initializeDriver:165] [main] - Chrome Driver launched successfully
+2026-04-22 14:20:53,081 INFO  c.p.TestEnvironmentImpl [initializeEnvironment:130] [main] - Driver is initialised::ChromeDriver: chrome on WINDOWS (d1c1b707f86113b3a3d8ac6a446a58c6)
+2026-04-22 14:20:53,082 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 14:20:55,008 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 14:20:56,118 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 14:20:56,256 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 14:21:28,310 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 14:21:30,533 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 14:21:30,562 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 14:21:30,643 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 14:21:30,802 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 14:21:30,873 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 14:21:50,491 ERROR c.p.f.WaitHandlerImpl [verifyAndWaitIfThrobberPresent:440] [main] - Error while waiting for throbber in verifyAndWaitIfThrobberPresent():no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'EGORNIKER-NB', ip: '192.168.178.26', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1c1b707f86113b3a3d8ac6a446a58c6, findElement {using=xpath, value=//*[@class='throbber']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\E59B5~1.GOR\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53362}, goog:processID: 44620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53362/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1c1b707f86113b3a3d8ac6a446a58c6
+2026-04-22 14:21:50,504 ERROR c.p.s.WaitForDocStateReady [waitForDocStateReady:200] [main] - Unexpected exception, will keep trying...org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'EGORNIKER-NB', ip: '192.168.178.26', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1c1b707f86113b3a3d8ac6a446a58c6, findElements {using=xpath, value=//div[@class='document-statetracker']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\E59B5~1.GOR\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53362}, goog:processID: 44620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53362/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1c1b707f86113b3a3d8ac6a446a58c6
+2026-04-22 14:22:18,106 INFO  c.p.c.SUTConfig [<init>:87] [main] - Setting is.pipeline.run property to false
+2026-04-22 14:22:18,140 INFO  c.p.c.SUTConfig [<init>:108] [main] - Debug mode is: true
+2026-04-22 14:22:18,141 INFO  c.p.c.SUTConfig [<init>:118] [main] - Attach PRPC logs?false
+2026-04-22 14:22:18,141 INFO  c.p.TestEnvironmentImpl [setLoggerLevel:198] [main] - Logger level is set to : INFO
+2026-04-22 14:22:18,469 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:70] [main] - yes chrome.exe exists
+2026-04-22 14:22:18,614 INFO  c.p.c.u.GetChromeDriver [getCurrentVersionOfDriverAsString:161] [main] - current driver version is 147.0.7727.57
+2026-04-22 14:22:18,618 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:76] [main] - current version of chrome 147.0.7727.57
+2026-04-22 14:22:18,618 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:77] [main] - local Chrome version is 147
+2026-04-22 14:22:19,001 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:115] [main] - Chrome Version: 147	ChromeDriver version needed:147.0.7727.57
+2026-04-22 14:22:19,001 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:117] [main] - Required chromedriver version is already available. Not attempting to download any new version
+2026-04-22 14:22:21,383 INFO  c.p.d.PegaChromeDriver [initializeDriver:165] [main] - Chrome Driver launched successfully
+2026-04-22 14:22:21,791 INFO  c.p.TestEnvironmentImpl [initializeEnvironment:130] [main] - Driver is initialised::ChromeDriver: chrome on WINDOWS (2be6b10f32566f6c7722bdec52cd3af0)
+2026-04-22 14:22:21,791 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 14:22:23,162 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 14:22:24,196 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 14:22:24,811 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 14:22:24,931 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 14:22:56,838 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 14:22:59,043 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 14:22:59,071 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 14:22:59,141 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 14:22:59,271 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 14:22:59,371 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 14:23:29,535 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 14:23:31,675 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 14:23:31,701 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 14:23:31,772 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 14:23:31,863 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 14:23:31,941 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 14:24:02,118 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 14:24:03,216 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 14:24:03,270 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 14:24:03,356 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 14:24:33,724 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 14:24:34,814 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 15:07:12,849 INFO  c.p.c.SUTConfig [<init>:87] [main] - Setting is.pipeline.run property to false
+2026-04-22 15:07:12,892 INFO  c.p.c.SUTConfig [<init>:108] [main] - Debug mode is: true
+2026-04-22 15:07:12,894 INFO  c.p.c.SUTConfig [<init>:118] [main] - Attach PRPC logs?false
+2026-04-22 15:07:12,895 INFO  c.p.TestEnvironmentImpl [setLoggerLevel:198] [main] - Logger level is set to : INFO
+2026-04-22 15:07:13,316 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:70] [main] - yes chrome.exe exists
+2026-04-22 15:07:13,473 INFO  c.p.c.u.GetChromeDriver [getCurrentVersionOfDriverAsString:161] [main] - current driver version is 147.0.7727.57
+2026-04-22 15:07:13,477 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:76] [main] - current version of chrome 147.0.7727.57
+2026-04-22 15:07:13,477 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:77] [main] - local Chrome version is 147
+2026-04-22 15:07:14,123 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:115] [main] - Chrome Version: 147	ChromeDriver version needed:147.0.7727.57
+2026-04-22 15:07:14,124 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:117] [main] - Required chromedriver version is already available. Not attempting to download any new version
+2026-04-22 15:07:17,082 INFO  c.p.d.PegaChromeDriver [initializeDriver:165] [main] - Chrome Driver launched successfully
+2026-04-22 15:07:17,662 INFO  c.p.TestEnvironmentImpl [initializeEnvironment:130] [main] - Driver is initialised::ChromeDriver: chrome on WINDOWS (447e50ab779acb426a3c22f7882565e2)
+2026-04-22 15:07:17,662 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 15:07:19,037 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 15:07:20,274 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 15:07:20,537 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 15:07:52,689 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 15:07:54,870 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 15:07:54,903 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 15:07:54,979 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 15:07:55,115 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 15:07:55,192 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 15:08:25,443 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 15:08:27,589 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 15:08:27,614 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 15:08:27,677 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 15:08:27,776 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 15:08:27,846 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 15:08:58,138 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 15:08:59,230 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 15:08:59,279 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 15:08:59,366 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 15:09:29,745 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 15:09:30,836 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 16:01:32,998 INFO  c.p.c.SUTConfig [<init>:87] [main] - Setting is.pipeline.run property to false
+2026-04-22 16:01:33,026 INFO  c.p.c.SUTConfig [<init>:108] [main] - Debug mode is: true
+2026-04-22 16:01:33,027 INFO  c.p.c.SUTConfig [<init>:118] [main] - Attach PRPC logs?false
+2026-04-22 16:01:33,027 INFO  c.p.TestEnvironmentImpl [setLoggerLevel:198] [main] - Logger level is set to : INFO
+2026-04-22 16:01:33,336 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:70] [main] - yes chrome.exe exists
+2026-04-22 16:01:33,467 INFO  c.p.c.u.GetChromeDriver [getCurrentVersionOfDriverAsString:161] [main] - current driver version is 147.0.7727.57
+2026-04-22 16:01:33,468 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:76] [main] - current version of chrome 147.0.7727.57
+2026-04-22 16:01:33,470 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:77] [main] - local Chrome version is 147
+2026-04-22 16:01:33,917 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:115] [main] - Chrome Version: 147	ChromeDriver version needed:147.0.7727.57
+2026-04-22 16:01:33,917 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:117] [main] - Required chromedriver version is already available. Not attempting to download any new version
+2026-04-22 16:01:36,234 INFO  c.p.d.PegaChromeDriver [initializeDriver:165] [main] - Chrome Driver launched successfully
+2026-04-22 16:01:36,685 INFO  c.p.TestEnvironmentImpl [initializeEnvironment:130] [main] - Driver is initialised::ChromeDriver: chrome on WINDOWS (5524eeb93ebc9673ea4dbcb5961640f5)
+2026-04-22 16:01:36,686 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 16:01:38,030 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 16:01:39,028 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 16:01:39,626 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 16:01:39,707 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 16:02:11,490 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 16:02:13,662 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 16:02:13,685 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 16:02:13,739 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 16:02:13,847 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 16:02:13,925 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 16:02:44,139 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 16:02:46,311 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 16:02:46,330 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 16:02:46,399 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 16:02:46,513 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 16:02:46,591 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 16:03:16,783 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 16:03:17,880 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 16:03:17,922 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 16:03:17,988 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 16:03:48,311 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 16:03:49,424 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 16:09:32,094 INFO  c.p.c.SUTConfig [<init>:87] [main] - Setting is.pipeline.run property to false
+2026-04-22 16:09:32,117 INFO  c.p.c.SUTConfig [<init>:108] [main] - Debug mode is: true
+2026-04-22 16:09:32,117 INFO  c.p.c.SUTConfig [<init>:118] [main] - Attach PRPC logs?false
+2026-04-22 16:09:32,118 INFO  c.p.TestEnvironmentImpl [setLoggerLevel:198] [main] - Logger level is set to : INFO
+2026-04-22 16:09:32,396 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:70] [main] - yes chrome.exe exists
+2026-04-22 16:09:32,498 INFO  c.p.c.u.GetChromeDriver [getCurrentVersionOfDriverAsString:161] [main] - current driver version is 147.0.7727.57
+2026-04-22 16:09:32,499 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:76] [main] - current version of chrome 147.0.7727.57
+2026-04-22 16:09:32,501 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:77] [main] - local Chrome version is 147
+2026-04-22 16:09:32,795 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:115] [main] - Chrome Version: 147	ChromeDriver version needed:147.0.7727.57
+2026-04-22 16:09:32,796 INFO  c.p.c.u.GetChromeDriver [getChromeDriverForChrome:117] [main] - Required chromedriver version is already available. Not attempting to download any new version
+2026-04-22 16:09:34,986 INFO  c.p.d.PegaChromeDriver [initializeDriver:165] [main] - Chrome Driver launched successfully
+2026-04-22 16:09:35,304 INFO  c.p.TestEnvironmentImpl [initializeEnvironment:130] [main] - Driver is initialised::ChromeDriver: chrome on WINDOWS (3f64c94afcc58db4b444bb219dd99664)
+2026-04-22 16:09:35,305 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 16:09:36,546 INFO  c.p.BrowserImpl [open:283] [main] - Opening the URL
+2026-04-22 16:09:37,491 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 16:09:38,082 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 16:09:38,152 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]
+2026-04-22 16:10:09,897 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 16:10:12,093 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 16:10:12,142 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 16:10:12,254 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: identifier
+2026-04-22 16:10:12,336 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 16:10:12,396 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 16:10:42,573 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 16:10:44,711 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 16:10:44,731 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 16:10:44,772 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.name: credentials.passcode
+2026-04-22 16:10:44,848 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 16:10:44,895 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.xpath: //input[@type='submit']
+2026-04-22 16:11:15,015 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 16:11:16,095 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
+2026-04-22 16:11:16,132 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 16:11:16,189 INFO  c.p.f.PegaWebDriverImpl [findElement:79] [main] - element identification by logic:By.cssSelector: button[data-testid=':privacy-dialog:accept']
+2026-04-22 16:11:46,465 INFO  c.p.s.WaitForDocStateReady [waitForDocStateReady:208] [main] - !!! Document state div was never identified...are you sure your system is doc state aware?
+2026-04-22 16:11:47,545 INFO  c.p.s.Throbber [waitForNoThrobber:69] [main] - Throbbing never started
