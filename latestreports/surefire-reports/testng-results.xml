@@ -13,36 +13,45 @@
     <line>
       <![CDATA[Checking availability of URL: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions.json]]>
     </line>
+    <line>
+      <![CDATA[All SSL Certificates will be accepted...]]>
+    </line>
+    <line>
+      <![CDATA[Checking availability of URL: https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip]]>
+    </line>
+    <line>
+      <![CDATA[deleted directory successfully : binaries\chromedriver-win32]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-04-22T16:09:30 MESZ" name="Surefire suite" finished-at="2026-04-22T16:11:52 MESZ" duration-ms="142249">
+  <suite started-at="2026-04-27T13:45:23 MESZ" name="Surefire suite" finished-at="2026-04-27T13:47:27 MESZ" duration-ms="123705">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-22T16:09:30 MESZ" name="Surefire test" finished-at="2026-04-22T16:11:52 MESZ" duration-ms="142249">
+    <test started-at="2026-04-27T13:45:23 MESZ" name="Surefire test" finished-at="2026-04-27T13:47:27 MESZ" duration-ms="123705">
       <class name="com.pega.PilotRunCukesTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-22T16:09:30 MESZ" name="setUpClass" finished-at="2026-04-22T16:09:31 MESZ" duration-ms="990" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-27T13:45:23 MESZ" name="setUpClass" finished-at="2026-04-27T13:45:24 MESZ" duration-ms="1119" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4cc93e77]]>
+                <![CDATA[org.testng.TestRunner@7d24bd80]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-22T16:09:31 MESZ" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-22T16:11:52 MESZ" duration-ms="141129" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-27T13:45:24 MESZ" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:47:26 MESZ" duration-ms="122424" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Log in to Pega application via SSO"]]>
+                <![CDATA["Erfolgreicher Login in die Pega-Anwendung via SSO"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Open pilot Pega application]"]]>
+                <![CDATA["Optional[Pega Pilot-Anwendung öffnen]"]]>
               </value>
             </param>
           </params>
@@ -59,9 +68,18 @@
             <line>
               <![CDATA[Checking availability of URL: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions.json]]>
             </line>
+            <line>
+              <![CDATA[All SSL Certificates will be accepted...]]>
+            </line>
+            <line>
+              <![CDATA[Checking availability of URL: https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip]]>
+            </line>
+            <line>
+              <![CDATA[deleted directory successfully : binaries\chromedriver-win32]]>
+            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-22T16:11:52 MESZ" name="tearDownClass" finished-at="2026-04-22T16:11:52 MESZ" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pega.PilotRunCukesTest@3b07a0d6]" started-at="2026-04-27T13:47:26 MESZ" name="tearDownClass" finished-at="2026-04-27T13:47:27 MESZ" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

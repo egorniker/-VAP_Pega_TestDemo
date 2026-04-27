@@ -97,9 +97,11 @@ public class CRMBrowser extends PegaBrowser {
 		pegaMarketingPortal = getPortal(PMPortal.class);
 	}
 
-	@Given("^a user is on login page of CS Portal$")
-	public void open() {
-		super.open();
+	
+
+	@Given("die Pega-Anwendung ist geöffnet")
+	public void openPegaApplication() {
+    	super.open();
 	}
 
 	@When("^User logs in to CS portal as bouser$")
@@ -226,51 +228,55 @@ public class CRMBrowser extends PegaBrowser {
 		logout();
 	}
 
-	@When("^User logs in to Pega platform via SSO$")
-	public void user_logs_in_to_pega_platform_via_sso() throws Throwable {
-		pegaDriver = testEnv.getPegaDriver();
-		WebDriverWait wait = new WebDriverWait(pegaDriver, Duration.ofSeconds(10));
+	@When("der Benutzer meldet sich via SSO an")
+public void userLogsInViaSSO() throws Throwable {
+    pegaDriver = testEnv.getPegaDriver();
 
-		By acceptButton = By.cssSelector("button[data-testid=':privacy-dialog:accept']");
-		By ssoButton = By.xpath("//button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]");
-		By loginField = By.name("identifier");
-		By passwordField = By.name("credentials.passcode");
-		By submitButton = By.xpath("//input[@type='submit']");
+    WebDriverWait wait =
+            new WebDriverWait(pegaDriver, Duration.ofSeconds(10));
 
-		
-		if (!pegaDriver.findElements(acceptButton).isEmpty()) {
-			wait.until(ExpectedConditions.elementToBeClickable(acceptButton));
-			pegaDriver.findElement(acceptButton).click();
-		}
+    By acceptButton =
+            By.cssSelector("button[data-testid=':privacy-dialog:accept']");
 
-		
-		wait.until(ExpectedConditions.elementToBeClickable(ssoButton));
-		pegaDriver.findElement(ssoButton).click();
+    By ssoButton =
+            By.xpath("//button[contains(.,'Login with SSO')] | //a[contains(.,'Login with SSO')]");
 
-		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(loginField));
-		pegaDriver.findElement(loginField)
-				.sendKeys(configuration.getCredential("PEGA_SSO_USER_ID"));
+    By loginField =
+            By.name("identifier");
 
-		
-		wait.until(ExpectedConditions.elementToBeClickable(submitButton));
-		pegaDriver.findElement(submitButton).click();
+    By passwordField =
+            By.name("credentials.passcode");
 
-		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(passwordField));
-		pegaDriver.findElement(passwordField)
-				.sendKeys(configuration.getCredential("PEGA_SSO_PASSWORD"));
+    By submitButton =
+            By.xpath("//input[@type='submit']");
 
-		
-		wait.until(ExpectedConditions.elementToBeClickable(submitButton));
-		pegaDriver.findElement(submitButton).click();
+    if (!pegaDriver.findElements(acceptButton).isEmpty()) {
+        wait.until(ExpectedConditions.elementToBeClickable(acceptButton));
+        pegaDriver.findElement(acceptButton).click();
+    }
 
-		
-		if (!pegaDriver.findElements(acceptButton).isEmpty()) {
-			wait.until(ExpectedConditions.elementToBeClickable(acceptButton));
-			pegaDriver.findElement(acceptButton).click();
-		}
-	}
+    wait.until(ExpectedConditions.elementToBeClickable(ssoButton));
+    pegaDriver.findElement(ssoButton).click();
+
+    wait.until(ExpectedConditions.visibilityOfElementLocated(loginField));
+    pegaDriver.findElement(loginField)
+            .sendKeys(configuration.getCredential("PEGA_SSO_USER_ID"));
+
+    wait.until(ExpectedConditions.elementToBeClickable(submitButton));
+    pegaDriver.findElement(submitButton).click();
+
+    wait.until(ExpectedConditions.visibilityOfElementLocated(passwordField));
+    pegaDriver.findElement(passwordField)
+            .sendKeys(configuration.getCredential("PEGA_SSO_PASSWORD"));
+
+    wait.until(ExpectedConditions.elementToBeClickable(submitButton));
+    pegaDriver.findElement(submitButton).click();
+
+    if (!pegaDriver.findElements(acceptButton).isEmpty()) {
+        wait.until(ExpectedConditions.elementToBeClickable(acceptButton));
+        pegaDriver.findElement(acceptButton).click();
+    }
+}
 
 		
 

@@ -1,5 +1,7 @@
-Feature: Open pilot Pega application
+Feature: Pega Pilot-Anwendung öffnen
 
-  @pilot 
-  Scenario: Log in to Pega application via SSO
-    Then the user should be logged in to Pega successfully
+  @pilot
+  Scenario: Erfolgreicher Login in die Pega-Anwendung via SSO
+    Given die Pega-Anwendung ist geöffnet
+    When der Benutzer meldet sich via SSO an
+    Then der Benutzer ist erfolgreich in Pega angemeldet

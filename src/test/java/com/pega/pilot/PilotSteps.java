@@ -19,19 +19,24 @@ public class PilotSteps {
         this.testEnv = testEnv;
     }
 
-    @Then("the user should be logged in to Pega successfully")
-    public void theUserShouldBeLoggedInToPegaSuccessfully() {
-        String currentUrl = testEnv.getPegaDriver().getDriver().getCurrentUrl();
-        String pageSource = testEnv.getPegaDriver().getDriver().getPageSource();
+    @Then("der Benutzer ist erfolgreich in Pega angemeldet")
+    public void derBenutzerIstErfolgreichInPegaAngemeldet() {
+
+        String currentUrl =
+                testEnv.getPegaDriver().getDriver().getCurrentUrl();
+
+        String pageSource =
+                testEnv.getPegaDriver().getDriver().getPageSource();
 
         assertTrue(
-            "Expected a non-empty URL after SSO login, but current URL was: " + currentUrl,
+            "Nach dem SSO-Login wurde keine gültige URL geladen: " + currentUrl,
             currentUrl != null && !currentUrl.isEmpty()
         );
 
         assertFalse(
-            "Login page still seems to be displayed after SSO login.",
-            pageSource.contains("Login with SSO") || pageSource.contains("Incorrect user name or password")
+            "Die Login-Seite wird weiterhin angezeigt.",
+            pageSource.contains("Login with SSO")
+            || pageSource.contains("Incorrect user name or password")
         );
     }
 }
