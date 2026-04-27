@@ -1,77 +1,87 @@
 package com.pega.pilot.steps;
 
 import com.pega.pilot.comparison.ComparisonService;
+import com.pega.pilot.model.ContractTestSet;
 import com.pega.pilot.model.FieldComparisonResult;
 import com.pega.pilot.model.TestExecutionContext;
 import com.pega.pilot.model.TestSignal;
+import com.pega.pilot.report.TestReportCollector;
+import com.pega.pilot.util.ContractTestSetCsvLoader;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.guice.ScenarioScoped;
+
 import org.testng.Assert;
 
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
+@ScenarioScoped
 public class DxSapCompareSteps {
 
-    private static final TestExecutionContext context = new TestExecutionContext();
+    private final TestExecutionContext context = new TestExecutionContext();
     private final ComparisonService comparisonService = new ComparisonService();
+    private final ContractTestSetCsvLoader csvLoader = new ContractTestSetCsvLoader();
+    private final TestReportCollector reportCollector = new TestReportCollector();
 
-    @Given("SAP XML Datei {string}")
-    public void sapXmlDatei(String path) {
-        context.setSapFilePath(path);
-        System.out.println("SET SAP PATH = " + context.getSapFilePath());
+    @Given("Testset CSV Datei {string}")
+    public void testsetCsvDatei(String path) {
+        context.setTestSetCsvPath(path);
+        System.out.println("SET TESTSET CSV PATH = " + context.getTestSetCsvPath());
     }
 
-    @Given("DX JSON Datei {string}")
-    public void dxJsonDatei(String path) {
-        context.setDxFilePath(path);
-        System.out.println("SET DX PATH = " + context.getDxFilePath());
-    }
+    @When("ich alle registrierten Vertrags-Testsets vergleiche")
+    public void ichAlleRegistriertenVertragsTestsetsVergleiche() throws Exception {
+        System.out.println("BEFORE LOAD CSV PATH = " + context.getTestSetCsvPath());
 
-    @Given("Mapping Datei {string}")
-    public void mappingDatei(String path) {
-        context.setMappingFilePath(path);
-        System.out.println("SET MAPPING PATH = " + context.getMappingFilePath());
-    }
+        if (context.getTestSetCsvPath() == null || context.getTestSetCsvPath().isBlank()) {
+            throw new IllegalStateException("TestSet CSV Pfad wurde nicht gesetzt. Given-Schritt wurde wahrscheinlich nicht ausgeführt.");
+        }
 
-    @Given("Test-ID {string}")
-    public void testId(String testId) {
-        context.setTestId(testId);
-        System.out.println("SET TEST ID = " + context.getTestId());
-    }
+        List<ContractTestSet> testSets = csvLoader.load(context.getTestSetCsvPath());
 
-    @When("ich die Vertragsfelder vergleiche")
-    public void ichDieVertragsfelderVergleiche() throws Exception {
-        System.out.println("BEFORE COMPARE SAP PATH = " + context.getSapFilePath());
-        System.out.println("BEFORE COMPARE DX PATH = " + context.getDxFilePath());
-        System.out.println("BEFORE COMPARE MAPPING PATH = " + context.getMappingFilePath());
+        Map<String, List<FieldComparisonResult>> resultsByTestSet = new LinkedHashMap<>();
 
-        comparisonService.executeComparison(context);
-    }
+        for (ContractTestSet testSet : testSets) {
+            System.out.println("\nSTARTE TESTSET: " + testSet.getTestId());
 
-    @Then("sollen alle Felder fachlich korrekt sein")
-    public void sollenAlleFelderFachlichKorrektSein() {
-        List<FieldComparisonResult> failed = context.getResults()
+            List<FieldComparisonResult> results =
+                    comparisonService.executeComparisonForTestSet(context, testSet);
+
+            resultsByTestSet.put(testSet.getTestId(), results);
+        }
+
+    context.setResultsByTestSet(resultsByTestSet);
+}
+
+    @Then("sollen alle registrierten Vertrags-Testsets fachlich korrekt sein")
+    public void sollenAlleRegistriertenVertragsTestsetsFachlichKorrektSein() {
+        List<String> failedMessages = context.getResultsByTestSet()
+                .entrySet()
                 .stream()
-                .filter(r -> r.getSignal() == TestSignal.FAIL)
+                .flatMap(entry -> entry.getValue()
+                        .stream()
+                        .filter(r -> r.getSignal() == TestSignal.FAIL)
+                        .map(r -> entry.getKey()
+                                + " | Feld: " + r.getFeldName()
+                                + " | Erwartet: " + r.getErwarteterWert()
+                                + " | Tatsächlich: " + r.getTatsaechlicherWert()
+                                + " | Hinweis: " + r.getHinweis()))
                 .collect(Collectors.toList());
 
-        if (!failed.isEmpty()) {
-            String message = failed.stream()
-                    .map(r -> r.getFeldName()
-                            + " | Erwartet: " + r.getErwarteterWert()
-                            + " | Tatsächlich: " + r.getTatsaechlicherWert()
-                            + " | Hinweis: " + r.getHinweis())
-                    .collect(Collectors.joining("\n"));
-
-            Assert.fail("Es gibt fachliche Abweichungen:\n" + message);
+        if (!failedMessages.isEmpty()) {
+            Assert.fail("Es gibt fachliche Abweichungen:\n"
+                    + String.join("\n", failedMessages));
         }
     }
 
-    @And("ein Testbericht soll erzeugt werden")
-    public void einDeutscherTestberichtSollErzeugtWerden() {
-        System.out.println("Testbericht wurde ausgegeben.");
+    @And("ein Gesamttestbericht soll erzeugt werden")
+    public void einGesamttestberichtSollErzeugtWerden() {
+        reportCollector.printSummaryReport(context.getResultsByTestSet());
     }
 }

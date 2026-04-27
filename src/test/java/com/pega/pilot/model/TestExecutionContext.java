@@ -2,6 +2,8 @@ package com.pega.pilot.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class TestExecutionContext {
     private String sapFilePath;
@@ -12,6 +14,9 @@ public class TestExecutionContext {
     private List<MappingRule> mappingRules = new ArrayList<>();
     private List<FieldComparisonResult> results = new ArrayList<>();
     private String testId;
+    private String testSetCsvPath;
+    private String currentTestId;
+    private Map<String, List<FieldComparisonResult>> resultsByTestSet = new LinkedHashMap<>();
 
     public String getSapFilePath() {
         return sapFilePath;
@@ -73,5 +78,28 @@ public class TestExecutionContext {
 
     public void setResults(List<FieldComparisonResult> results) {
         this.results = results;
+    }
+    public String getTestSetCsvPath() {
+    return testSetCsvPath;
+    }
+
+    public void setTestSetCsvPath(String testSetCsvPath) {
+        this.testSetCsvPath = testSetCsvPath;
+    }
+
+    public String getCurrentTestId() {
+        return currentTestId;
+    }
+
+    public void setCurrentTestId(String currentTestId) {
+        this.currentTestId = currentTestId;
+    }
+
+    public Map<String, List<FieldComparisonResult>> getResultsByTestSet() {
+        return resultsByTestSet;
+    }
+
+    public void setResultsByTestSet(Map<String, List<FieldComparisonResult>> resultsByTestSet) {
+        this.resultsByTestSet = resultsByTestSet;
     }
 }
