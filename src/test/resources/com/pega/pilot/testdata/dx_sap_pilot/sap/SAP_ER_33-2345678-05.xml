@@ -14,7 +14,7 @@
                </meldungsliste>
             </responseMetadata>
             <ns2:vertrag>
-               <ns7:vertragsnummer>33-2345678-06</ns7:vertragsnummer>
+               <ns7:vertragsnummer>33-2345678-05</ns7:vertragsnummer>
                <ns7:externerOrdnungsbegriff>
                   <ns7:typ>ANTRAGSNUMMER_VM</ns7:typ>
                   <ns7:wert></ns7:wert>
@@ -31,7 +31,7 @@
                <ns7:unternehmen>Württembergische Krankenversicherung AG</ns7:unternehmen>
                <ns7:herkunftVertrag>WK</ns7:herkunftVertrag>
                <ns7:agenturBeziehung>
-                  <ns7:agenturnummerMitPz>9999-0021-1</ns7:agenturnummerMitPz>
+                  <ns7:agenturnummerMitPz>9999-0021-11</ns7:agenturnummerMitPz>
                   <ns7:beziehungsart>Betreuend</ns7:beziehungsart>
                </ns7:agenturBeziehung>
                <ns7:personenBeziehung>

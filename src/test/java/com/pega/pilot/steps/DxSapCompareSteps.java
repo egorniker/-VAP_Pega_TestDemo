@@ -7,6 +7,7 @@ import com.pega.pilot.model.TestExecutionContext;
 import com.pega.pilot.model.TestSignal;
 import com.pega.pilot.report.TestReportCollector;
 import com.pega.pilot.util.ContractTestSetCsvLoader;
+import com.pega.pilot.report.HtmlDxSapReportGenerator;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -28,6 +29,7 @@ public class DxSapCompareSteps {
     private final ComparisonService comparisonService = new ComparisonService();
     private final ContractTestSetCsvLoader csvLoader = new ContractTestSetCsvLoader();
     private final TestReportCollector reportCollector = new TestReportCollector();
+    private final HtmlDxSapReportGenerator htmlReportGenerator = new HtmlDxSapReportGenerator();
 
     @Given("Testset CSV Datei {string}")
     public void testsetCsvDatei(String path) {
@@ -46,6 +48,7 @@ public class DxSapCompareSteps {
         List<ContractTestSet> testSets = csvLoader.load(context.getTestSetCsvPath());
 
         Map<String, List<FieldComparisonResult>> resultsByTestSet = new LinkedHashMap<>();
+        Map<String, String> dxFileByTestSet = new LinkedHashMap<>();
 
         for (ContractTestSet testSet : testSets) {
             System.out.println("\nSTARTE TESTSET: " + testSet.getTestId());
@@ -54,13 +57,23 @@ public class DxSapCompareSteps {
                     comparisonService.executeComparisonForTestSet(context, testSet);
 
             resultsByTestSet.put(testSet.getTestId(), results);
+            dxFileByTestSet.put(testSet.getTestId(), testSet.getDxJsonPath());
         }
 
     context.setResultsByTestSet(resultsByTestSet);
+    context.setDxFileByTestSet(dxFileByTestSet);
 }
 
     @Then("sollen alle registrierten Vertrags-Testsets fachlich korrekt sein")
-    public void sollenAlleRegistriertenVertragsTestsetsFachlichKorrektSein() {
+    public void sollenAlleRegistriertenVertragsTestsetsFachlichKorrektSein() throws Exception {
+
+        reportCollector.printSummaryReport(context.getResultsByTestSet());
+
+        htmlReportGenerator.generateAllReports(
+                context.getResultsByTestSet(),
+                context.getDxFileByTestSet()
+        );
+
         List<String> failedMessages = context.getResultsByTestSet()
                 .entrySet()
                 .stream()
@@ -80,8 +93,4 @@ public class DxSapCompareSteps {
         }
     }
 
-    @And("ein Gesamttestbericht soll erzeugt werden")
-    public void einGesamttestberichtSollErzeugtWerden() {
-        reportCollector.printSummaryReport(context.getResultsByTestSet());
-    }
 }

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class TestExecutionContext {
     private String sapFilePath;
@@ -17,6 +19,7 @@ public class TestExecutionContext {
     private String testSetCsvPath;
     private String currentTestId;
     private Map<String, List<FieldComparisonResult>> resultsByTestSet = new LinkedHashMap<>();
+    private Map<String, String> dxFileByTestSet = new LinkedHashMap<>();
 
     public String getSapFilePath() {
         return sapFilePath;
@@ -101,5 +104,12 @@ public class TestExecutionContext {
 
     public void setResultsByTestSet(Map<String, List<FieldComparisonResult>> resultsByTestSet) {
         this.resultsByTestSet = resultsByTestSet;
+    }
+    public Map<String, String> getDxFileByTestSet() {
+        return dxFileByTestSet;
+    }
+
+    public void setDxFileByTestSet(Map<String, String> dxFileByTestSet) {
+        this.dxFileByTestSet = dxFileByTestSet;
     }
 }
