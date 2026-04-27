@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.pega.PilotRunCukesTest" class="method navigator-link" hash-for-method="runScenario(&quot;Erfolgreicher Login in die Pega-Anwendung via SSO&quot;, &quot;Optional[Pega Pilot-Anwendung öffnen]&quot;)">runScenario("Erfolgreicher Login in die Pega-Anwendung via SSO", "Optional[Pega Pilot-Anwendung öffnen]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pega.PilotDxSapRunCukesTest" class="method navigator-link" hash-for-method="runScenario(&quot;Pilotvergleich der Vertragssektion&quot;, &quot;Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten...)">runScenario("Pilotvergleich der Vertragssektion", "Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -122,15 +122,15 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.pega.PilotRunCukesTest</span>
+              <span class="class-name">com.pega.PilotDxSapRunCukesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Erfolgreicher Login in die Pega-Anwendung via SSO&quot;, &quot;Optional[Pega Pilot-Anwendung öffnen]&quot;)">
-                  </a> <!-- runScenario("Erfolgreicher Login in die Pega-Anwendung via SSO", "Optional[Pega Pilot-Anwendung öffnen]") -->
+                  <a name="runScenario(&quot;Pilotvergleich der Vertragssektion&quot;, &quot;Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten...)">
+                  </a> <!-- runScenario("Pilotvergleich der Vertragssektion", "Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Erfolgreicher Login in die Pega-Anwendung via SSO", "Optional[Pega Pilot-Anwendung öffnen]")</span>
+                  <span class="parameters">("Pilotvergleich der Vertragssektion", "Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -148,7 +148,7 @@
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.pega.PilotRunCukesTest&quot;/&gt;
+      &lt;class name=&quot;com.pega.PilotDxSapRunCukesTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -199,13 +199,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'com.pega.PilotRunCukesTest')
-data.setCell(0, 3, 122424);
+data.setCell(0, 2, 'com.pega.PilotDxSapRunCukesTest')
+data.setCell(0, 3, 543);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 543 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -216,18 +216,6 @@ return data;
             <span class="header-content">Reporter output for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("Erfolgreicher Login in die Pega-Anwendung via SSO", "Optional[Pega Pilot-Anwendung öffnen]")</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">existing driver pathbinaries\chromedriver.exe</span>
-                <span class="reporter-method-output">in method: getCurrentVersionOfDriverAsString</span>
-                <span class="reporter-method-output">All SSL Certificates will be accepted...</span>
-                <span class="reporter-method-output">Checking availability of URL: https://googlechromelabs.github.io/chrome-for-testing/known-good-versions.json</span>
-                <span class="reporter-method-output">All SSL Certificates will be accepted...</span>
-                <span class="reporter-method-output">Checking availability of URL: https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip</span>
-                <span class="reporter-method-output">deleted directory successfully : binaries\chromedriver-win32</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
@@ -243,18 +231,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pega.PilotRunCukesTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pega.PilotDxSapRunCukesTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@7d24bd80)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@787f32b7)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Erfolgreicher Login in die Pega-Anwendung via SSO", "Optional[Pega Pilot-Anwendung öffnen]")</span>
-                <span class="method-start">1135 ms</span>
+                <span class="method-name">runScenario("Pilotvergleich der Vertragssektion", "Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten...)</span>
+                <span class="method-start">532 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">123561 ms</span>
+                <span class="method-start">1077 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

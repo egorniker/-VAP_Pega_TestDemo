@@ -22,7 +22,7 @@ public class SapXmlParser {
 
         SapContractData data = new SapContractData();
 
-        data.setVertragsnummer("33-2345678-05");
+        data.setVertragsnummer(getFirstTagValue(doc, "ns7:vertragsnummer"));
         data.setStatus(getFirstTagValue(doc, "ns7:vertragsstatus"));
         data.setVorname(getFirstTagValue(doc, "ns7:vorname"));
         data.setNachname(getFirstTagValue(doc, "ns7:nachname"));
