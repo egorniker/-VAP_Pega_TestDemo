@@ -8,6 +8,8 @@ import com.pega.pilot.parser.SapXmlParser;
 import com.pega.pilot.report.TestReportCollector;
 import com.pega.pilot.util.FileLoader;
 import com.pega.pilot.report.HtmlComparisonReportWriter;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +36,15 @@ public class ComparisonService {
 
         context.setResults(results);
         reportCollector.printGermanReport(results);
-        htmlReportWriter.writeReport(results, "target/dx-sap-vergleich-report.html");
+        String timestamp = LocalDateTime.now()
+                .format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+
+        String testId = context.getTestId() == null || context.getTestId().isBlank()
+                ? "dx_sap_vergleich"
+                : context.getTestId();
+
+        String outputPath = "target/dx-sap-reports/" + testId + "_" + timestamp + ".html";
+
+        htmlReportWriter.writeReport(results, outputPath);
     }
 }

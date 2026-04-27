@@ -36,6 +36,12 @@ public class DxSapCompareSteps {
         System.out.println("SET MAPPING PATH = " + context.getMappingFilePath());
     }
 
+    @Given("Test-ID {string}")
+    public void testId(String testId) {
+        context.setTestId(testId);
+        System.out.println("SET TEST ID = " + context.getTestId());
+    }
+
     @When("ich die Vertragsfelder vergleiche")
     public void ichDieVertragsfelderVergleiche() throws Exception {
         System.out.println("BEFORE COMPARE SAP PATH = " + context.getSapFilePath());

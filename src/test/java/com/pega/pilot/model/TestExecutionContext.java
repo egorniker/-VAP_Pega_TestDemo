@@ -11,9 +11,16 @@ public class TestExecutionContext {
     private DxContractData dxData;
     private List<MappingRule> mappingRules = new ArrayList<>();
     private List<FieldComparisonResult> results = new ArrayList<>();
+    private String testId;
 
     public String getSapFilePath() {
         return sapFilePath;
+    }
+    public String getTestId() {
+    return testId;
+    }
+    public void setTestId(String testId) {
+    this.testId = testId;
     }
 
     public void setSapFilePath(String sapFilePath) {
