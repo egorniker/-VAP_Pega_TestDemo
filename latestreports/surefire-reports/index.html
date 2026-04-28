@@ -133,7 +133,6 @@
                   <span class="parameters">("Vertragsdaten fuer alle registrierten Testsets vergleichen", "Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten]")</span>
                   <div class="stack-trace">java.lang.AssertionError: Es gibt fachliche Abweichungen:
 TE_01 | Feld: Vermittlernummer | Erwartet: 9999-0021-11 | Tatsächlich: 9999-0021-1 | Hinweis: Wert stimmt nicht überein
-TE_02 | Feld: Beitrag | Erwartet: 181,81 € | Tatsächlich: 81,81 € | Hinweis: Wert stimmt nicht überein
 	at com.pega.pilot.steps.DxSapCompareSteps.sollenAlleRegistriertenVertragsTestsetsFachlichKorrektSein(DxSapCompareSteps.java:91)
 	at ✽.sollen alle registrierten Vertrags-Testsets fachlich korrekt sein(classpath:com/pega/pilot/features/dx_sap_pilot.feature:6)
 ... Removed 1 stack frames
@@ -207,12 +206,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.pega.PilotDxSapRunCukesTest')
-data.setCell(0, 3, 587);
+data.setCell(0, 3, 641);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 587 ms</span>
+              <span class="suite-total-time">Total running time: 641 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -240,18 +239,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.pega.PilotDxSapRunCukesTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@31464a43)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@7f8633ae)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Vertragsdaten fuer alle registrierten Testsets vergleichen", "Optional[Vergleich von SAP XML und DX...)</span>
-                <span class="method-start">499 ms</span>
+                <span class="method-start">547 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">1090 ms</span>
+                <span class="method-start">1195 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

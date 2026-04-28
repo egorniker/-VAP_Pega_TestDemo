@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-27T16:29:19 MESZ" name="Surefire suite" finished-at="2026-04-27T16:29:20 MESZ" duration-ms="1212">
+  <suite started-at="2026-04-28T13:05:13 MESZ" name="Surefire suite" finished-at="2026-04-28T13:05:14 MESZ" duration-ms="1322">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-27T16:29:19 MESZ" name="Surefire test" finished-at="2026-04-27T16:29:20 MESZ" duration-ms="1212">
+    <test started-at="2026-04-28T13:05:13 MESZ" name="Surefire test" finished-at="2026-04-28T13:05:14 MESZ" duration-ms="1322">
       <class name="com.pega.PilotDxSapRunCukesTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-27T16:29:19 MESZ" name="setUpClass" finished-at="2026-04-27T16:29:20 MESZ" duration-ms="489" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-28T13:05:13 MESZ" name="setUpClass" finished-at="2026-04-28T13:05:13 MESZ" duration-ms="535" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@31464a43]]>
+                <![CDATA[org.testng.TestRunner@7f8633ae]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-27T16:29:20 MESZ" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T16:29:20 MESZ" duration-ms="587" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-28T13:05:13 MESZ" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-28T13:05:14 MESZ" duration-ms="641" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -37,13 +37,11 @@
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Es gibt fachliche Abweichungen:
-TE_01 | Feld: Vermittlernummer | Erwartet: 9999-0021-11 | Tatsächlich: 9999-0021-1 | Hinweis: Wert stimmt nicht überein
-TE_02 | Feld: Beitrag | Erwartet: 181,81 € | Tatsächlich: 81,81 € | Hinweis: Wert stimmt nicht überein]]>
+TE_01 | Feld: Vermittlernummer | Erwartet: 9999-0021-11 | Tatsächlich: 9999-0021-1 | Hinweis: Wert stimmt nicht überein]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Es gibt fachliche Abweichungen:
 TE_01 | Feld: Vermittlernummer | Erwartet: 9999-0021-11 | Tatsächlich: 9999-0021-1 | Hinweis: Wert stimmt nicht überein
-TE_02 | Feld: Beitrag | Erwartet: 181,81 € | Tatsächlich: 81,81 € | Hinweis: Wert stimmt nicht überein
 at org.testng.Assert.fail(Assert.java:99)
 at com.pega.pilot.steps.DxSapCompareSteps.sollenAlleRegistriertenVertragsTestsetsFachlichKorrektSein(DxSapCompareSteps.java:91)
 at ✽.sollen alle registrierten Vertrags-Testsets fachlich korrekt sein(classpath:com/pega/pilot/features/dx_sap_pilot.feature:6)
@@ -53,7 +51,7 @@ at ✽.sollen alle registrierten Vertrags-Testsets fachlich korrekt sein(classpa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-27T16:29:20 MESZ" name="tearDownClass" finished-at="2026-04-27T16:29:20 MESZ" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pega.PilotDxSapRunCukesTest@3b07a0d6]" started-at="2026-04-28T13:05:14 MESZ" name="tearDownClass" finished-at="2026-04-28T13:05:14 MESZ" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,12 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: com.pega.PilotDxSapRunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.639 s <<< FAILURE! - in com.pega.PilotDxSapRunCukesTest
-com.pega.PilotDxSapRunCukesTest.runScenario["Vertragsdaten fuer alle registrierten Testsets vergleichen", "Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten]"](1)  Time elapsed: 0.62 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.857 s <<< FAILURE! - in com.pega.PilotDxSapRunCukesTest
+com.pega.PilotDxSapRunCukesTest.runScenario["Vertragsdaten fuer alle registrierten Testsets vergleichen", "Optional[Vergleich von SAP XML und DX JSON fuer Vertragsdaten]"](1)  Time elapsed: 0.681 s  <<< FAILURE!
 java.lang.AssertionError: 
 Es gibt fachliche Abweichungen:
 TE_01 | Feld: Vermittlernummer | Erwartet: 9999-0021-11 | Tatsächlich: 9999-0021-1 | Hinweis: Wert stimmt nicht überein
-TE_02 | Feld: Beitrag | Erwartet: 181,81 € | Tatsächlich: 81,81 € | Hinweis: Wert stimmt nicht überein
 	at org.testng.Assert.fail(Assert.java:99)
 	at com.pega.pilot.steps.DxSapCompareSteps.sollenAlleRegistriertenVertragsTestsetsFachlichKorrektSein(DxSapCompareSteps.java:91)
 	at ✽.sollen alle registrierten Vertrags-Testsets fachlich korrekt sein(classpath:com/pega/pilot/features/dx_sap_pilot.feature:6)

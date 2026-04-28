@@ -65,6 +65,7 @@ public class HtmlDxSapReportGenerator {
             writer.write("<th>DX JSON</th>");
             writer.write("<th>Geprüfte Felder</th>");
             writer.write("<th>Fehler</th>");
+            writer.write("<th>Warnungen</th>");
             writer.write("<th>Status</th>");
             writer.write("</tr>");
 
@@ -80,8 +81,12 @@ public class HtmlDxSapReportGenerator {
                         .filter(r -> r.getSignal() == TestSignal.FAIL)
                         .count();
 
-                String status = failed == 0 ? "PASS" : "FAIL";
-                String css = failed == 0 ? "pass" : "fail";
+                long warned = results.stream()
+                        .filter(r -> r.getSignal() == TestSignal.WARN)
+                        .count();
+
+                TestSignal overallSignal = determineOverallSignal(failed, warned);
+                String css = getStatusCss(overallSignal);
 
                 writer.write("<tr>");
 
@@ -93,7 +98,8 @@ public class HtmlDxSapReportGenerator {
                 writer.write("<td>" + esc(dxFilePath) + "</td>");
                 writer.write("<td>" + results.size() + "</td>");
                 writer.write("<td>" + failed + "</td>");
-                writer.write("<td class='" + css + "'>" + status + "</td>");
+                writer.write("<td>" + warned + "</td>");
+                writer.write("<td class='" + css + "'>" + overallSignal + "</td>");
 
                 writer.write("</tr>");
             }
@@ -139,8 +145,7 @@ public class HtmlDxSapReportGenerator {
             writer.write("</tr>");
 
             for (FieldComparisonResult result : results) {
-                boolean passed = result.getSignal() == TestSignal.PASS;
-                String css = passed ? "pass" : "fail";
+                String css = getStatusCss(result.getSignal());
 
                 writer.write("<tr>");
                 writer.write("<td>" + esc(result.getFeldName()) + "</td>");
@@ -158,6 +163,34 @@ public class HtmlDxSapReportGenerator {
         System.out.println("HTML Einzelbericht erzeugt: " + filePath);
 
         return fileName;
+    }
+
+    private TestSignal determineOverallSignal(long failed, long warned) {
+        if (failed > 0) {
+            return TestSignal.FAIL;
+        }
+
+        if (warned > 0) {
+            return TestSignal.WARN;
+        }
+
+        return TestSignal.PASS;
+    }
+
+    private String getStatusCss(TestSignal signal) {
+        if (signal == TestSignal.PASS) {
+            return "pass";
+        }
+
+        if (signal == TestSignal.FAIL) {
+            return "fail";
+        }
+
+        if (signal == TestSignal.WARN) {
+            return "warn";
+        }
+
+        return "";
     }
 
     private String buildExecutionId(String dxFilePath, String timestamp) {
@@ -200,6 +233,7 @@ public class HtmlDxSapReportGenerator {
                 + "a:hover{text-decoration:underline;}"
                 + ".pass{color:#166534;font-weight:bold;background:#dcfce7;}"
                 + ".fail{color:#991b1b;font-weight:bold;background:#fee2e2;}"
+                + ".warn{color:#92400e;font-weight:bold;background:#fef3c7;}"
                 + "</style></head><body>";
     }
 
